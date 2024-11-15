@@ -50,7 +50,7 @@ const AudioSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-11 bg-[#194E82] rounded-lg shadow-md">
+    <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md">
       <h2 className="text-2xl font-bold mb-4 text-center text-white">Spotlight with Nikhil Sachan</h2>
       
       {/* Main content flex container */}

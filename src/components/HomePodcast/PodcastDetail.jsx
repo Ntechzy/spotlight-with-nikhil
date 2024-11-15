@@ -1,30 +1,34 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import portfolioData_spotlight from './PortfolioData_spotlight.json';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import podcast from "./Podcast.json";
 
-const PodcastDetail = () => {
-  const { id } = useParams();
-  const item = portfolioData_spotlight.find(p => p.id === parseInt(id));
-
-  if (!item) {
-    return <div className="text-white font-bold text-center text-[30px] md:text-[100px]">Portfolio item not found in Services</div>;
-  }
+const PodcastSpotlight = () => {
+  const [data] = useState(podcast);
 
   return (
-    <div className="p-4 mt-[-90px] flex flex-col  md:flex-row items-center min-h-screen bg-gray-900 text-white gap-5">
-      <div className="w-full md:w-1/2 lg:w-[400px] p-4">
-        <img src={item.image} alt={item.title} className="w-full h-auto rounded-lg shadow-lg" data-aos="flip-right"/>
-      </div>
-      <div className="w-full md:w-1/2 p-4 flex flex-col items-start" data-aos="flip-left">
-        <h1 className="text-2xl md:text-4xl font-bold mb-4">{item.title}</h1>
-        <p className="text-gray-300 mb-6">{item.description}</p>
-      
-        <div className="flex flex-wrap gap-4">
-         
-        </div>
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 bg-[#194E82] mt-2">
+      {data.map((item) => (
+        <Link
+          to={`/podcast/podcastDetail/${item.id}`}
+          key={item.id}
+          className="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 transition duration-300"
+          data-aos="flip-right"
+        >
+          <div className="relative h-64">
+            <img
+              src={item.thumbnail}
+              alt={item.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2">
+              <span>{item.duration}</span>
+              <h2 className="font-bold text-xl">{item.title}</h2>
+            </div>
+          </div>
+        </Link>
+      ))}
     </div>
   );
 };
 
-export default PodcastDetail;
+export default PodcastSpotlight;

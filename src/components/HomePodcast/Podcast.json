@@ -2,27 +2,36 @@
     {
       "id": 1,
       "title": "Services Project",
-      "link":"https://www.youtube.com/embed/zWEP6YJH_cY?si=5C4Am55kOoE0YYU"
+      "thumbnail": "https://img.youtube.com/vi/zWEP6YJH_cY/0.jpg",
+      "duration": "5:34",
+      "link": "https://www.youtube.com/embed/zWEP6YJH_cY?si=5C4Am55kOoE0YYU"
     },
     {
       "id": 2,
       "title": "Services Project",
-      "link":"https://www.youtube.com/embed/B7CABV7IH1Y?si=u5z0i2Uldk93CaTW"
+      "thumbnail": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
+      "duration": "3:20",
+      "link": "https://www.youtube.com/embed/B7CABV7IH1Y?si=u5z0i2Uldk93CaTW"
     },
     {
       "id": 3,
       "title": "Services Project",
-      "link":"https://www.youtube.com/embed/tl2_mlTvJhU?si=_3bV2c7JqUIP3zfL"
+      "thumbnail": "https://img.youtube.com/vi/tl2_mlTvJhU/0.jpg",
+      "duration": "4:50",
+      "link": "https://www.youtube.com/embed/tl2_mlTvJhU?si=_3bV2c7JqUIP3zfL"
     },
     {
       "id": 4,
       "title": "Services Project",
-      "link":"https://www.youtube.com/embed/HRt3hHysY_U?si=IxkWsKV6An4qXN31"
+      "thumbnail": "https://img.youtube.com/vi/HRt3hHysY_U/0.jpg",
+      "duration": "6:10",
+      "link": "https://www.youtube.com/embed/HRt3hHysY_U?si=IxkWsKV6An4qXN31"
     },
     {
       "id": 5,
       "title": "Services Project",
-      "link":"https://www.youtube.com/embed/NCTS05DDmv8?si=ZMRDC860qsDEQ4-N"
+      "thumbnail": "https://img.youtube.com/vi/NCTS05DDmv8/0.jpg",
+      "duration": "2:45",
+      "link": "https://www.youtube.com/embed/NCTS05DDmv8?si=ZMRDC860qsDEQ4-N"
     }
-  ]
-  
+]

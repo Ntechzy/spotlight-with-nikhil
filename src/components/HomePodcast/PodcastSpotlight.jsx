@@ -4,31 +4,35 @@ import podcast from "./Podcast.json";
 
 const PodcastSpotlight = () => {
   const [data] = useState(podcast);
-  const truncate = (str, n) => {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+    <div >
+
+   <div className="text-black text-4xl font-bold text-center p-8">
+Featured Video
+   </div>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4   gap-6 p-11 bg-[#194E82] mt-2">
       {data.map((item) => (
         <Link
-          to={`/portfolio/SpotlightWithNikhil/${item.id}`}
+          to={`/podcast/podcastDetail/${item.id}`}
           key={item.id}
-          className="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 transition duration-300" data-aos="flip-right"
+          className="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 transition duration-300"
+          data-aos="flip-right"
         >
-          <div className="p-4 relative h-64"> {/* Ensure the parent div has a set height */}
-            <h2 className="font-bold text-xl mb-2">{item.title}</h2>
-            <iframe
-              src={item.link}
-              title={item.title}
-              className="absolute top-0 left-0 w-full h-full" 
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="relative h-48"> {/* Adjusted height */}
+            <img
+              src={item.thumbnail}
+              alt={item.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 flex justify-between items-center">
+              <span className="text-sm">{item.duration}</span> {/* Right side */}
+            </div>
           </div>
         </Link>
       ))}
+    </div>
     </div>
   );
 };
