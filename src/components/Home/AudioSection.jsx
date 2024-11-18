@@ -19,24 +19,36 @@ const AudioSection = () => {
 
   // Function to handle backward seek
   const seekBackward = () => {
-    audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 10);
+    if (audioRef.current) {
+      audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 10);
+    }
   };
 
   // Function to handle forward seek
   const seekForward = () => {
-    audioRef.current.currentTime = Math.min(duration, audioRef.current.currentTime + 10);
+    if (audioRef.current) {
+      audioRef.current.currentTime = Math.min(duration, audioRef.current.currentTime + 10);
+    }
   };
 
   // Update current time and duration
   useEffect(() => {
     const updateCurrentTime = () => {
-      setCurrentTime(audioRef.current.currentTime);
-      setDuration(audioRef.current.duration);
+      if (audioRef.current) {
+        setCurrentTime(audioRef.current.currentTime);
+        setDuration(audioRef.current.duration);
+      }
     };
 
-    audioRef.current.addEventListener('timeupdate', updateCurrentTime);
+    if (audioRef.current) {
+      audioRef.current.addEventListener('timeupdate', updateCurrentTime);
+    }
+
+    // Cleanup function to remove event listener
     return () => {
-      audioRef.current.removeEventListener('timeupdate', updateCurrentTime);
+      if (audioRef.current) {
+        audioRef.current.removeEventListener('timeupdate', updateCurrentTime);
+      }
     };
   }, [audioRef]);
 
@@ -46,13 +58,15 @@ const AudioSection = () => {
     const clickX = e.clientX - progressBar.getBoundingClientRect().left;
     const progressBarWidth = progressBar.offsetWidth;
     const newTime = (clickX / progressBarWidth) * duration;
-    audioRef.current.currentTime = newTime;
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
   };
 
   return (
     <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md">
       <h2 className="text-2xl font-bold mb-4 text-center text-white">Spotlight with Nikhil Sachan</h2>
-      
+
       {/* Main content flex container */}
       <div className="flex flex-row w-full items-center">
         
@@ -67,10 +81,10 @@ const AudioSection = () => {
         <div className="flex flex-col w-1/2 items-center ml-4">
           {/* Custom Progress Bar */}
           <div className="w-full mb-4">
-            <div className="h-2 bg-gray-300 rounded-lg cursor-pointer relative" onClick={handleProgressClick}>
+            <div className="h-2 bg-gray-300 rounded-lg cursor-pointer" onClick={handleProgressClick}>
               <div
-                className="absolute bg-blue-500 h-full rounded-lg transition-all duration-300"
-                style={{ width: `${(currentTime / duration) * 100}%` }}
+                className="absolute bg-blue-500  rounded-lg transition-all duration-300 h-[8px]"
+                style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }}
               />
             </div>
             {/* Time Display */}
@@ -80,32 +94,30 @@ const AudioSection = () => {
             </div>
           </div>
 
-         <div className='flex flex-row gap-32 w-full items-center'>
-           {/* Song Title and Author */}
-           <div className="text-center mb-4">
-            <h3 className=" font-semibold text-xl text-white">Spotlights Here</h3>
-            <p className="text-lg text-white">by Nikhil Sachan</p>
-          </div>
+          <div className='flex flex-row gap-32 w-full items-center'>
+            {/* Song Title and Author */}
+            <div className="text-center mb-4">
+              <h3 className="font-semibold text-xl text-white">Spotlights Here</h3>
+              <p className="text-lg text-white">by Nikhil Sachan</p>
+            </div>
 
-          {/* Control Buttons */}
-          <div className="flex items-center space-x-4 mb-2 text-2xl">
-            <button onClick={seekBackward} className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
-              <FaBackward />
-            </button>
-            <button onClick={togglePlay} className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
-              {isPlaying ? <FaPauseCircle /> : <FaPlayCircle />}
-            </button>
-            <button onClick={seekForward} className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
-              <FaForward />
-            </button>
+            {/* Control Buttons */}
+            <div className="flex items-center space-x-4 mb-2 text-2xl">
+              <button onClick={seekBackward} className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+                <FaBackward />
+              </button>
+              <button onClick={togglePlay} className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+                {isPlaying ? <FaPauseCircle /> : <FaPlayCircle />}
+              </button>
+              <button onClick={seekForward} className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+                <FaForward />
+              </button>
+            </div>
+            {/* View More Episodes Link */}
+            <a href="/episodes" className="mt-2 text-white hover:underline text-lg">
+              More Episodes &rarr;
+            </a>
           </div>
-           {/* View More Episodes Link */}
-           <a href="/episodes" className="mt-2 text-white hover:underline text-lg">
-             More Episodes &rarr;
-          </a>
-         </div>
-
-         
         </div>
       </div>
 
