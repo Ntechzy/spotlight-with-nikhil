@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import podcast from "./PdcastDetailData.json";
+import podcast from "./Podcast.json";
 
-const PodcastSpotlight = () => {
+const PodcastSpotlight = ({isHome,heading}) => {
   const [data] = useState(podcast);
-
+  const Display = isHome? data.slice(0, 4): data;
+  console.log(Display);
   return (
     <div
       className="w-screen  bg-cover bg-no-repeat "
       style={{ backgroundImage: "url(/assets/svg1.svg)" }}
     >
       <div className="text-black text-4xl font-bold text-center p-8">
-        Featured Video
+       {heading}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-[99%] gap-6 p-11 m-auto mt-2">
-        {data.map((item) => (
+        {Display.map((item) => (
           <Link
-            to={`/podcast/podcastDetail/${item.id}`}
+            to={`/home/featuredPodcast/${item.id}`}
             key={item.id}
             className="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 transition duration-300"
             data-aos="flip-right"

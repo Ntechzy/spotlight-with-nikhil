@@ -11,7 +11,7 @@ const Home = () => {
     <div>
         <HomeBanner title={"Let’s Start Now"} description={"Taking Podcast to the Next Level"} image={"/assets/podcastbanner.JPG"} btn={"Explore Now"}/>
         <AudioSection />
-        <PodcastSpotlight />
+        <PodcastSpotlight isHome={true} heading={"Featured Podcasts"}/>
         <OurGuests/>
         <TestimonialCarousel />
         <UpcomingGuest/>

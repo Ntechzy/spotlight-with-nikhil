@@ -3,12 +3,13 @@ import { Route, Routes } from 'react-router-dom'
 import PodcastDetails from './PodcastDetails'
 
 
+
 const PodcastNav = () => {
   return (
     <div>
         <Routes>
             {/* <Route path="/*" exact element={<PodcastSpotlight/>} /> */}
-            <Route path="/podcastDetail/:id" exact element={<PodcastDetails/>} />
+            <Route path="/featuredPodcast/:id" exact element={<PodcastDetails/>} />
         </Routes>
     </div>
   )
