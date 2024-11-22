@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import PodcastDetails from './PodcastDetails'
-// import PodcastDetails from './PodcastDetail'
+
 
 const PodcastNav = () => {
   return (
