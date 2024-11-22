@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import podcast from "./Podcast.json";
+import podcast from "./PdcastDetailData.json";
 
 const PodcastSpotlight = () => {
   const [data] = useState(podcast);

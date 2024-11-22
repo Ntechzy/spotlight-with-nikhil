@@ -14,7 +14,7 @@ const AboutContent = () => {
       {/* Image Section */}
       <div className="w-1/2 p-4">
         <img 
-          src="https://via.placeholder.com/400" 
+          src="/assets/podcastbanner.JPG" 
           alt="Spotlight" 
           className="w-full h-auto rounded-lg" 
         />
