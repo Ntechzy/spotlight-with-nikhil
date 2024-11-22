@@ -1,8 +1,9 @@
 // src/App.js
 import React, { useEffect, useState } from 'react';
-import podcasts from './podcastDetail.json'; // Import the JSON data
+import podcasts from './pdcastDetail.json'; // Import the JSON data
 import { useParams } from 'react-router-dom';
 import PodcastDetail from './PodcastDetail';
+// import PodcastDetail from './PdcastDetail.json';
 
 
 const PodcastDetails = () => {

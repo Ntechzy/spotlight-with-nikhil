@@ -1,0 +1,32 @@
+[
+  {
+      "id": 1,
+      "videoUrl": "",
+      "iframeUrl": "https://www.youtube.com/embed/H5GZRhfuuZc?si=6enGcaz4llcAphGE",
+      "title": "Podcast 1",
+      "author": "Jane Doe",
+      "date": "2024-11-01",
+      "description": "In this episode, we explore the power of React Hooks and how they can simplify your component logic.",
+      "tags": ["Political Podcast"]
+  },
+  {
+      "id": 2,
+      "videoUrl": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
+      "iframeUrl": "https://www.youtube.com/embed/B7CABV7IH1Y", 
+      "title": "JavaScript ES6 Features",
+      "author": "John Smith",
+      "date": "2024-10-20",
+      "description": "Join us as we dive into the new features introduced in ES6 and how they enhance JavaScript development.",
+      "tags": ["JavaScript", "ES6", "Web Development"]
+  },
+  {
+      "id": 3,
+      "videoUrl": "https://www.youtube.com/embed/kh1vKZkT8gY",
+      "iframeUrl": "https://www.youtube.com/embed/kh1vKZkT8gY",  
+      "title": "CSS Grid Layout",
+      "author": "Emily Johnson",
+      "date": "2024-11-10",
+      "description": "Learn how to create responsive layouts using CSS Grid in this detailed episode.",
+      "tags": ["CSS", "Grid", "Web Design"]
+  }
+]

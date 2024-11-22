@@ -5,39 +5,21 @@ export const navbarData = [
     },
     {
       "label": "ABOUT US",
-      "link": "/services",
-      "submenu": [
-        {
-          "label": "Service 1 Here",
-          "link": "/services/web-development"
-        },
-        {
-          "label": "Service 2 Here",
-          "link": "/services/app-development"
-        }
-      ]
+      "link": "/about",
+      
     },
     {
       "label": "PODCASTS",
-      "link": "/about",
-      "submenu": [
-        {
-          "label": "About 1 Here",
-          "link": "/services/web-development"
-        },
-        {
-          "label": "About 2 Here",
-          "link": "/services/app-development"
-        }
-      ]
+      "link": "/podcast",
+      
     },
     {
       "label": "BLOG",
-      "link": "/contact"
+      "link": "/blog"
     },
     {
-      "label": "PAGES",
-      "link": "/contact"
+      "label": "OUR TEAM",
+      "link": "/our-team"
     },
     {
       "label": "CONTACT",

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const PodcastDetail = ({ podcast }) => {
   if (!podcast) {
     return <div className="text-red-500">Podcast not found.</div>;
@@ -7,12 +9,15 @@ const PodcastDetail = ({ podcast }) => {
     <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="aspect-w-16 aspect-h-9">
         <iframe
-          className="w-full h-96"
-          src={podcast.videoUrl}
-          title={podcast.title}
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
+          width="670"
+          height="315"
+          src={podcast.iframeUrl || "https://www.youtube.com/embed/HRt3hHysY_U"} // Use the iframeUrl from the podcast or a default one
+          title={`${podcast.title} - YouTube video player`} // Use dynamic title for better accessibility
+          frameBorder="0" // Corrected to camelCase
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen // Corrected to camelCase
+        />
       </div>
       <div className="p-6">
         <h2 className="text-3xl font-bold mb-2">{podcast.title}</h2>
@@ -44,4 +49,5 @@ const PodcastDetail = ({ podcast }) => {
     </div>
   );
 };
+
 export default PodcastDetail;

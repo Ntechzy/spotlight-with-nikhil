@@ -6,13 +6,13 @@ const PodcastSpotlight = () => {
   const [data] = useState(podcast);
 
   return (
-    <div >
+    <div className="w-screen  bg-cover bg-no-repeat " style={{ backgroundImage:"url(/assets/svg1.svg)"}} >
 
-   <div className="text-black text-4xl font-bold text-center p-8">
+   <div className="text-black text-4xl font-bold text-center p-8" >
 Featured Video
    </div>
 
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4   gap-6 p-11 bg-[#194E82] mt-2">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-[99%]   gap-6 p-11 m-auto  mt-2">
       {data.map((item) => (
         <Link
           to={`/podcast/podcastDetail/${item.id}`}

@@ -45,24 +45,20 @@ const Navbar = () => {
       </div>
 
       {/* Search Input, Channel Button, and Hamburger Menu Icon */}
-      <div className="flex items-center space-x-4">
-        <input 
-          type="text" 
-          placeholder="Search..." 
-          className="px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-[#2e6793]" 
-        />
+      <div className="flex items-center space-x-4 rounded p-2">
+       {/* <div className='border p-[8px] rounded-md bg-slate-50'>Subscribe the channel</div> */}
         
         {/* Channel Button */}
-        <button className="px-4 py-2 bg-[#194E82] text-white rounded-md hover:bg-[#1f4b7e] transition duration-200">
-          Channel
+        <button className="px-4 py-2 bg-[#194E82] font-semibold  text-white rounded-md hover:bg-[#1f4b7e] transition duration-200">
+         Subscribe the  Channel
         </button>
 
         {/* Hamburger Menu Icon */}
-        <div className="flex items-center cursor-pointer">
+        {/* <div className="flex items-center cursor-pointer">
           <svg className="h-8 w-8 text-black hover:text-[#2e6793]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
