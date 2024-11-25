@@ -7,6 +7,9 @@ const AudioSection = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
 
+  // Initialize AOS on component mount
+
+
   // Function to handle play/pause
   const togglePlay = () => {
     if (isPlaying) {
@@ -65,20 +68,24 @@ const AudioSection = () => {
 
   return (
     <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center text-white">Spotlight with Nikhil Sachan</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center text-white" data-aos="fade-up">
+        Spotlight with Nikhil Sachan
+      </h2>
 
       {/* Main content flex container */}
-      <div className="flex flex-row w-full items-center">
+      <div className="flex flex-row w-full items-center" data-aos="fade-up" data-aos-delay="200">
         
         {/* Image Section */}
         <img 
           src="/assets/podcastbanner.JPG" // Replace with your image URL
           alt="Audio Visual"
           className="w-[30%] h-48 object-cover rounded-md m-auto"
+          data-aos="fade-right"
+          data-aos-delay="300"
         />
 
         {/* Audio Player Controls Section */}
-        <div className="flex flex-col w-1/2 items-center ml-4">
+        <div className="flex flex-col w-1/2 items-center ml-4" data-aos="fade-left" data-aos-delay="400">
           {/* Custom Progress Bar */}
           <div className="w-full mb-4">
             <div className="h-2 bg-gray-300 rounded-lg cursor-pointer" onClick={handleProgressClick}>
@@ -103,18 +110,34 @@ const AudioSection = () => {
 
             {/* Control Buttons */}
             <div className="flex items-center space-x-4 mb-2 text-2xl">
-              <button onClick={seekBackward} className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+              <button 
+                onClick={seekBackward} 
+                className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
                 <FaBackward />
               </button>
-              <button onClick={togglePlay} className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+              <button 
+                onClick={togglePlay} 
+                className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
                 {isPlaying ? <FaPauseCircle /> : <FaPlayCircle />}
               </button>
-              <button onClick={seekForward} className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+              <button 
+                onClick={seekForward} 
+                className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
                 <FaForward />
               </button>
             </div>
+
             {/* View More Episodes Link */}
-            <a href="/episodes" className="mt-2 text-white hover:underline text-lg">
+            <a href="/episodes" className="mt-2 text-white hover:underline text-lg" data-aos="fade-up" data-aos-delay="800">
               More Episodes &rarr;
             </a>
           </div>

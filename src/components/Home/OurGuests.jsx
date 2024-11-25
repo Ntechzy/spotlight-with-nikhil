@@ -4,21 +4,21 @@ import Guest from './Guest';
 const OurGuests = () => {
   const profiles = [
     {
-      name: "John Doe",
-      position: "Software Engineer",
-      address: "1234 Elm Street, Springfield, IL",
+      name: "Abhijeet Sanga",
+      position: "BJP MLA",
+      address: "Bithoor Constituency",
       image: "/assets/john_doe.jpg"
     },
     {
-      name: "Jane Smith",
-      position: "Product Manager",
-      address: "4321 Maple Avenue, Chicago, IL",
+      name: "Surendra Maithani",
+      position: "BJP MLA",
+      address: "Govind Nagar Constituency",
       image: "/assets/jane_smith.jpg"
     },
     {
-      name: "Mike Johnson",
-      position: "UX Designer",
-      address: "5678 Pine Street, Austin, TX",
+      name: "Annu Awasthi",
+      position: "COMEDIAN | ACTOR",
+      address: "Bollywood",
       image: "/assets/mike_johnson.jpg"
     }
   ];

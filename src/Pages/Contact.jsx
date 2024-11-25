@@ -11,7 +11,7 @@ const Contact = () => {
 
       <div className="mx-auto p-8 bg-white shadow-md rounded-lg mt-8 flex justify-between">
         {/* Google Map Embedded */}
-        <div className="mb-8 w-[65%]">
+        <div className="mb-8 w-[65%]" data-aos="fade-right">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14285.827006378517!2d80.3010295!3d26.4732347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c390bc50eb861%3A0xcb92eaeb9f752362!2sNTECHZY%20PVT.%20LTD!5e0!3m2!1sen!2sin!4v1732272632940!5m2!1sen!2sin"
             width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"
@@ -20,7 +20,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="text-center w-[30%]">
+        <div className="text-center w-[30%]"data-aos="fade-left">
           {/* <p className="text-lg mb-4">For inquiries, please reach us at:</p> */}
           
           {/* Email */}

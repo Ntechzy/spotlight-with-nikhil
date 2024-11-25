@@ -1,39 +1,87 @@
 import React from "react";
+import { FaYoutube, FaInstagram, FaTwitter, FaFacebook, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Importing icons
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#194E82] to-blue-600 py-10 flex justify-center flex-col ">
-      <h1 className="text-3xl font-bold mb-4 text-center">
-        <span className="text-white font-bold">Spotlight with Nikhil</span>
+    <footer className="bg-gradient-to-r from-[#194E82] to-blue-600 py-12 flex flex-col justify-center items-center">
+      <h1 className="text-3xl font-bold mb-4 text-center text-white">
+        Spotlight with Nikhil
       </h1>
-      <div className="flex justify-between items-center w-[90%] m-auto">
-        <div className="w-[50%] flex flex-row">
-          <div className="flex flex-col gap-4 list-none text-xl text-white m-auto ">
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-          </div>
-          <div className="flex flex-col gap-2 list-none text-xl text-white m-auto ">
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
+
+      {/* Main Content: Navigation & Contact */}
+      <div className="flex flex-wrap justify-between items-start w-[90%] max-w-[1200px] mb-8">
+
+        {/* Navigation Links */}
+        <div className="w-full sm:w-[45%] mb-6 sm:mb-0" data-aos="fade-right">
+          <div className="flex flex-col gap-4 text-xl text-white font-semibold">
+            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">HOME</li>
+            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">ABOUT US</li>
+            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">PODCASTS</li>
+            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">BLOG</li>
+            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">OUR TEAM</li>
+            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">CONTACT</li>
           </div>
         </div>
 
-        <div className="flex item-center m-auto  w-[50%]">
-          <div className="flex flex-col items-end gap-4 list-none text-xl text-white m-auto ">
-            <li>+91 91983 50992</li>
-            <li>Info@spotlightwithnikhil.in</li>
-            <li className="w-[50%] text-end">
-              117/H, 1606, Near J.K. Temple, Model Town, Pandu Nagar, Kanpur,
-              Uttar Pradesh 208005
+        {/* Contact Info & Social Media */}
+        <div className="w-full sm:w-[45%] mb-6 sm:mb-0" data-aos="fade-left">
+          {/* Contact Information */}
+          <div className="flex flex-col gap-4 text-xl text-white">
+            <li className="flex items-center gap-2">
+              <FaPhoneAlt className="text-lg" /> +91 91983 50992
+            </li>
+            <li className="flex items-center gap-2">
+              <FaEnvelope className="text-lg" /> Info@spotlightwithnikhil.in
+            </li>
+            <li className="flex items-center gap-2 w-[90%] sm:w-[80%] text-end">
+              <FaMapMarkerAlt className="text-lg" /> 117/H, 1606, Near J.K. Temple, Model Town, Pandu Nagar, Kanpur, Uttar Pradesh 208005
             </li>
           </div>
+
+          {/* Social Media Links in Row */}
+          <div className="flex gap-8 mt-6 justify-start">
+            <a
+              href="https://www.youtube.com"
+              className="text-white text-3xl hover:text-red-600 transition-colors duration-300"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              className="text-white text-3xl hover:text-pink-500 transition-colors duration-300"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              className="text-white text-3xl hover:text-blue-400 transition-colors duration-300"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              className="text-white text-3xl hover:text-blue-600 transition-colors duration-300"
+            >
+              <FaFacebook />
+            </a>
+          </div>
+          {/* Reach us on Social Media Text */}
+          <p className="text-white mt-4 text-lg">Reach us on Social Media</p>
         </div>
+      </div>
+
+      {/* Footer Bottom Section with Copyright and Creator Info */}
+      <div className="w-full text-center text-white mt-8 text-sm">
+        <p>&copy; 2024 Spotlight with Nikhil. All Rights Reserved.</p>
+        <p>
+          Created by{" "}
+          <a
+            href="https://www.ntechzy.com"
+            className="text-yellow-300 hover:underline"
+          >
+            Ntechzy Pvt. Ltd.
+          </a>
+        </p>
       </div>
     </footer>
   );

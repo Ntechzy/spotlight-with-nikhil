@@ -35,7 +35,7 @@ const TestimonialCarousel = () => {
 
   return (
     <div
-      className="w-full h-screen bg-cover bg-center relative"
+      className="w-full h-screen bg-cover bg-center relative" data-aos="fade-up"
       style={{
         backgroundImage: "url('/assets/testimonialbg.png')",
       }}

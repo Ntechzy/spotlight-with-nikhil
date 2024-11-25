@@ -1,7 +1,7 @@
 import React from 'react';
 const AboutContent = () => {
   return (
-    <div className="flex items-center justify-between p-6 bg-gray-100">
+    <div className="flex items-center justify-between p-6 bg-gray-100" data-aos="fade-up">
       {/* Content Section */}
       <div className="w-1/2 p-4">
         <h1 className="text-2xl font-bold mb-4">Welcome to Spotlight with Nikhil</h1>

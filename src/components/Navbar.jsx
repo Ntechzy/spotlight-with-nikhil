@@ -49,9 +49,11 @@ const Navbar = () => {
        {/* <div className='border p-[8px] rounded-md bg-slate-50'>Subscribe the channel</div> */}
         
         {/* Channel Button */}
-        <button className="px-4 py-2 bg-[#194E82] font-semibold  text-white rounded-md hover:bg-[#1f4b7e] transition duration-200">
+      <Link to="https://www.youtube.com/@SpotlightwithNikhil" target="_blank" >
+      <button className="px-4 py-2 bg-[#194E82] font-semibold  text-white rounded-md hover:bg-[#1f4b7e] transition duration-200">
          Subscribe the  Channel
         </button>
+      </Link>
 
         {/* Hamburger Menu Icon */}
         {/* <div className="flex items-center cursor-pointer">

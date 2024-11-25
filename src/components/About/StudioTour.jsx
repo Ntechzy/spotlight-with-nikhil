@@ -1,7 +1,7 @@
 import React from 'react';
 const StudioTour = () => {
   return (
-    <div className="flex items-start justify-between p-6 bg-gray-100">
+    <div className="flex items-start justify-between p-6 bg-gray-100" data-aos="fade-right">
          {/* Image Section */}
       <div className="w-1/2 p-4">
         <img 
@@ -11,7 +11,7 @@ const StudioTour = () => {
         />
       </div>
       {/* Content Section */}
-      <div className="w-1/2 p-4">
+      <div className="w-1/2 p-4" data-aos="fade-right">
         <h1 className="text-2xl font-bold mb-4">STUDIO TOUR</h1>
         <p>
         Welcome to the studio of "Spotlight with Nikhil," where excellence meets innovation. Our studio is impeccably furnished with the latest high-quality cameras, microphones, and cut- ting-edge technology to ensure the highest production standards.

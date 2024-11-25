@@ -4,23 +4,36 @@ import Guest from './Guest';
 const UpcomingGuest = () => {
   const profiles = [
     {
-      name: "John Doe",
-      position: "Software Engineer",
-      address: "1234 Elm Street, Springfield, IL",
+      name: "Ramesh Awasthi",
+      position: "BJP MP, Kanpur",
+      address: "Kanpur",
       image: "/assets/john_doe.jpg"
     },
     {
-      name: "Jane Smith",
-      position: "Product Manager",
-      address: "4321 Maple Avenue, Chicago, IL",
+      name: "Rakesh Sachan",
+      position: "Cabinet Minister U.P.",
+      address: " Uttar Pradesh Government",
       image: "/assets/jane_smith.jpg"
     },
     {
-      name: "Mike Johnson",
-      position: "UX Designer",
-      address: "5678 Pine Street, Austin, TX",
-      image: "/assets/mike_johnson.jpg"
-    }
+      name: "Keshav Prasad Maurya",
+      position: "Deputy Chief Minister U.P.",
+      address: " Uttar Pradesh Government",
+      image: "/assets/jane_smith.jpg"
+    },
+    {
+      name: "Dr. Dinesh Sharma",
+      position: "Ex Deputy Chief Minister U.P.",
+      address: " Uttar Pradesh Government",
+      image: "/assets/jane_smith.jpg"
+    },
+    {
+      name: "Swatantra Dev Singh",
+      position: "Cabinet Minister U.P.Government",
+      address: " Uttar Pradesh Government",
+      image: "/assets/jane_smith.jpg"
+    },
+  
   ];
 
   return (
