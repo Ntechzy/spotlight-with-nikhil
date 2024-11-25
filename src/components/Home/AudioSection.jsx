@@ -67,7 +67,7 @@ const AudioSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md ">
+    <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md">
       <h2 className="text-2xl font-bold mb-4 text-center text-white" data-aos="fade-up">
         Spotlight with Nikhil Sachan
       </h2>
@@ -85,7 +85,7 @@ const AudioSection = () => {
         />
 
         {/* Audio Player Controls Section */}
-        <div className="flex flex-col w-1/2 items-center ml-4 mt-5" data-aos="fade-left" data-aos-delay="400">
+        <div className="flex flex-col w-1/2 items-center ml-4" data-aos="fade-left" data-aos-delay="400">
           {/* Custom Progress Bar */}
           <div className="w-full mb-4">
             <div className="h-2 bg-gray-300 rounded-lg cursor-pointer" onClick={handleProgressClick}>
@@ -101,11 +101,10 @@ const AudioSection = () => {
             </div>
           </div>
 
-          <div className='flex md:flex-row flex-col md:gap-32 gap-4 w-full items-center'>
+          <div className='flex flex-row gap-32 w-full items-center'>
             {/* Song Title and Author */}
-            <div className="text-center md:mb-4 w-full ">
-              <h3 className="font-semibold text-xl text-white">Spotlights Here</h3> 
-              
+            <div className="text-center mb-4">
+              <h3 className="font-semibold text-xl text-white">Spotlights Here</h3>
               <p className="text-lg text-white">by Nikhil Sachan</p>
             </div>
 
