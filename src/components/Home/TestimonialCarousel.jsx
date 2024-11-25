@@ -23,30 +23,30 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000, // Adjust the delay (in milliseconds) as desired
+    autoplaySpeed: 2000, // Adjust the delay (in milliseconds) as desired
     arrows: false, // Hide the default arrows
   };
 
   return (
     <div
-      className="w-full h-screen bg-cover bg-center relative" data-aos="fade-up"
+      className="md:w-full h-screen md:bg-cover bg-no-repeat bg-center md:relative" data-aos="fade-up"
       style={{
         backgroundImage: "url('/assets/testimonialbg.png')",
       }}
     >
-      <div className="absolute top-8 left-8 max-w-lg bg-white p-8 shadow-md rounded-lg border-red-900">
+      <div className="md:absolute top-8 left-8 max-w-lg bg-white p-8 shadow-md rounded-lg border-red-900 m-8 ">
         <h3 className="text-blue-700 text-2xl font-semibold mb-2">TESTIMONIAL</h3>
         <h2 className="text-2xl font-bold mb-4">Our guests say about us</h2>
 
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-4">
+            <div key={index} className="p-8">
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.photo}

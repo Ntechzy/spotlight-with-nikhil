@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa';
 
 const TopSection = () => {
   return (
-    <div className="bg-[#194E82] text-white p-2 flex flex-row w-[100%] m-auto">
+    <div className="bg-[#194E82] text-white p-2  flex-row w-[100%] m-auto md:block hidden">
       <div className="container  flex flex-row justify-between items-center">
         {/* Contact Info Section */}
         <div className="flex flex-row gap-9">

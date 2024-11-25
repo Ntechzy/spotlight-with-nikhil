@@ -14,7 +14,7 @@ const HomeBanner = ({ title, description, image, btn }) => {
 
   return (
     <div
-      className="relative w-full h-screen z-[999] bg-contain bg-no-repeat bg-center bg-[#050505]"
+      className="relative w-full md:h-screen h-[80vh] bg-cover  z-10 md:bg-contain bg-no-repeat bg-center bg-[#050505] p-5"
       style={{ backgroundImage: `url("${image}")` }}
     >
       {/* Overlay */}
@@ -23,7 +23,7 @@ const HomeBanner = ({ title, description, image, btn }) => {
       <div className="relative flex items-center flex-col pt-36 h-full gap-4">
         {/* Title with AOS Animation */}
         <h1 
-          className="text-white text-6xl font-bold" 
+          className="text-white md:text-6xl md:font-bold text-4xl font-semibold " 
           data-aos="fade-up"
         >
           {title}
@@ -31,7 +31,7 @@ const HomeBanner = ({ title, description, image, btn }) => {
 
         {/* Description with AOS Animation */}
         <p 
-          className="text-white text-4xl font-bold w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] text-center" 
+          className="text-white md:text-4xl md:font-bold w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] text-center text-2xl" 
           data-aos="fade-up" 
           data-aos-delay="200"
         >
@@ -40,7 +40,7 @@ const HomeBanner = ({ title, description, image, btn }) => {
 
         {/* Button with AOS Animation */}
         <button 
-          className="bg-[#194E82] text-white font-bold py-3 px-6 rounded-lg mt-4" 
+          className="bg-[#194E82] text-white md:font-bold md:py-3 md:px-6 p-3 rounded-lg md:mt-4 mt-2" 
           data-aos="fade-up" 
           data-aos-delay="400"
         >

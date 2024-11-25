@@ -4,3 +4,21 @@
 /* body{
     background-color: #050707;
 } */
+.aos {
+    display: block; /* or inline-block if necessary */
+    max-width: 100%;
+    overflow: hidden; /* Prevent content from expanding beyond its container */
+    width: 100%;
+  }
+  [data-aos] {
+    width: auto;
+    max-width: 100%;
+    display: block; /* Ensure it behaves as a block-level element */
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .aos {
+      max-width: 100%;
+    }
+  }
+  
