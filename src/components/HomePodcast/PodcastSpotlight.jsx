@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import podcast from "./Podcast.json";
 
-const PodcastSpotlight = ({isHome,heading}) => {
+const PodcastSpotlight = ({ isHome, heading }) => {
   const [data] = useState(podcast);
-  const Display = isHome? data.slice(0, 4): data;
+  const Display = isHome ? data.slice(0, 4) : data;
   console.log(Display);
   return (
     <div
-      className="w-screen  bg-cover bg-no-repeat "
+      className="w-full  bg-cover bg-no-repeat "
       style={{ backgroundImage: "url(/assets/svg1.svg)" }}
     >
       <div className="text-black text-4xl font-bold text-center p-8">
-       {heading}
+        {heading}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-[99%] gap-6 p-11 m-auto mt-2">

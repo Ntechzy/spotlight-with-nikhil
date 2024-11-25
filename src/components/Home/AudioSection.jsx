@@ -73,10 +73,10 @@ const AudioSection = () => {
       </h2>
 
       {/* Main content flex container */}
-      <div className="flex flex-row w-full items-center" data-aos="fade-up" data-aos-delay="200">
-        
+      <div className="md:flex md:flex-row flex flex-col w-full items-center  " data-aos="fade-up" data-aos-delay="200">
+
         {/* Image Section */}
-        <img 
+        <img
           src="/assets/podcastbanner.JPG" // Replace with your image URL
           alt="Audio Visual"
           className="w-[30%] h-48 object-cover rounded-md m-auto"
@@ -85,7 +85,7 @@ const AudioSection = () => {
         />
 
         {/* Audio Player Controls Section */}
-        <div className="flex flex-col w-1/2 items-center ml-4" data-aos="fade-left" data-aos-delay="400">
+        <div className="flex flex-col  w-1/2 items-center md:ml-4 mt-4 md:mt-auto" data-aos="fade-left" data-aos-delay="400">
           {/* Custom Progress Bar */}
           <div className="w-full mb-4">
             <div className="h-2 bg-gray-300 rounded-lg cursor-pointer" onClick={handleProgressClick}>
@@ -101,7 +101,7 @@ const AudioSection = () => {
             </div>
           </div>
 
-          <div className='flex flex-row gap-32 w-full items-center'>
+          <div className='flex flex-col md:flex-row md:gap-32 w-full items-center'>
             {/* Song Title and Author */}
             <div className="text-center mb-4">
               <h3 className="font-semibold text-xl text-white">Spotlights Here</h3>
@@ -110,24 +110,24 @@ const AudioSection = () => {
 
             {/* Control Buttons */}
             <div className="flex items-center space-x-4 mb-2 text-2xl">
-              <button 
-                onClick={seekBackward} 
+              <button
+                onClick={seekBackward}
                 className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
                 data-aos="zoom-in"
                 data-aos-delay="500"
               >
                 <FaBackward />
               </button>
-              <button 
-                onClick={togglePlay} 
+              <button
+                onClick={togglePlay}
                 className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 {isPlaying ? <FaPauseCircle /> : <FaPlayCircle />}
               </button>
-              <button 
-                onClick={seekForward} 
+              <button
+                onClick={seekForward}
                 className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
                 data-aos="zoom-in"
                 data-aos-delay="700"

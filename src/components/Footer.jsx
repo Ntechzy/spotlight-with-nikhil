@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info & Social Media */}
-        <div className="w-full sm:w-[45%] mb-6 sm:mb-0" data-aos="fade-left">
+        <div className="w-full sm:w-[45%] mb-6 sm:mb-0" data-aos="fade-right">
           {/* Contact Information */}
           <div className="flex flex-col gap-4 text-xl text-white">
             <li className="flex items-center gap-2">
