@@ -6,7 +6,7 @@ const MissionVision = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12" data-aos="fade-left">
+        <div className="text-center mb-12" data-aos="fade-right">
           <h2 className="text-3xl font-bold text-gray-800">Our Mission & Vision</h2>
           <p className="mt-4 text-gray-600">
             We strive to achieve excellence in all our endeavors.

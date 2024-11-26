@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const PodcastDetail = ({ podcast }) => {
+  const [likes,setLikes] = useState(8778  );
   if (!podcast) {
     return <div className="text-red-500">Podcast not found.</div>;
   }
@@ -38,11 +40,11 @@ const PodcastDetail = ({ podcast }) => {
         </div>
         
         <div className="flex justify-between items-center">
-          <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">
-            Subscribe
-          </button>
-          <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400">
-            👍 Like
+       
+            <Link to="https://www.youtube.com/@SpotlightwithNikhil" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700" target="_blank">Subscribe</Link>
+          
+          <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400" onClick={() => setLikes(likes + 1)}>
+            👍 Like {likes}
           </button>
         </div>
       </div>

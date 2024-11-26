@@ -10,17 +10,17 @@ const OurGuests = () => {
       image: "/assets/john_doe.jpg"
     },
     {
+      name: "Annu Awasthi",
+      position: "COMEDIAN | ACTOR",
+      address: "Bollywood",
+      image: "/assets/mike_johnson.jpg"
+    },
+    {
       name: "Surendra Maithani",
       position: "BJP MLA",
       address: "Govind Nagar Constituency",
       image: "/assets/jane_smith.jpg"
     },
-    {
-      name: "Annu Awasthi",
-      position: "COMEDIAN | ACTOR",
-      address: "Bollywood",
-      image: "/assets/mike_johnson.jpg"
-    }
   ];
 
   return (

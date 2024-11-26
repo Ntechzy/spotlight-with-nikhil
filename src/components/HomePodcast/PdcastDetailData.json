@@ -2,31 +2,52 @@
   {
       "id": 1,
       "videoUrl": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
-      "iframeUrl": "https://www.youtube.com/embed/H5GZRhfuuZc?si=6enGcaz4llcAphGE",
+      "iframeUrl": "https://www.youtube.com/embed/HRt3hHysY_U?si=JaaYW7dSodcNiqUe",  
       "title": "Podcast 1",
-      "author": "Jane Doe",
+      "author": "Spotlight With Nikhil",
       "date": "2024-11-01",
-      "description": "In this episode, we explore the power of React Hooks and how they can simplify your component logic.",
+      "description": "Tune in with us and be part of the conversation that matters. Together, let's enlighten the path forward and empower a generation to make informed choices and drive positive change.",
       "tags": ["Political Podcast"]
   },
   {
       "id": 2,
       "videoUrl": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
-      "iframeUrl": "https://www.youtube.com/embed/B7CABV7IH1Y", 
-      "title": "JavaScript ES6 Features",
-      "author": "John Smith",
+      "iframeUrl": "https://www.youtube.com/embed/B7CABV7IH1Y?si=GAmFdtS02NaNvc3T", 
+      "title": "BJP MLA NEELIMA KATIYAR - JAIL | POLITICS | RAJNEETI | SANGHARSH | ",
+      "author": "Spotlight With Nikhil",
       "date": "2024-10-20",
-      "description": "Join us as we dive into the new features introduced in ES6 and how they enhance JavaScript development.",
-      "tags": ["JavaScript", "ES6", "Web Development"]
+      "description": "Tune in with us and be part of the conversation that matters. Together, let's enlighten the path forward and empower a generation to make informed choices and drive positive change.",
+      "tags": ["Political Podcast"]
   },
   {
       "id": 3,
-      "videoUrl": "https://www.youtube.com/embed/kh1vKZkT8gY",
-      "iframeUrl": "https://www.youtube.com/embed/kh1vKZkT8gY",  
-      "title": "CSS Grid Layout",
-      "author": "Emily Johnson",
-      "date": "2024-11-10",
-      "description": "Learn how to create responsive layouts using CSS Grid in this detailed episode.",
-      "tags": ["CSS", "Grid", "Web Design"]
+      "videoUrl": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
+      "iframeUrl": "https://www.youtube.com/embed/tl2_mlTvJhU?si=6oNzWEXnVkvn7GuC", 
+      "title": "UNION BUDGET 2024 | NIRMILA SITHARAMAN | GST | KANPUR की हालत ? | MODI | MUKUND MISHRA",
+      "author": "Spotlight With Nikhil",
+      "date": "2024-10-20",
+      "description": "Tune in with us and be part of the conversation that matters. Together, let's enlighten the path forward and empower a generation to make informed choices and drive positive change.",
+      "tags": ["Political Podcast"]
+  },
+  {
+      "id": 4,
+      "videoUrl": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
+      "iframeUrl": "https://www.youtube.com/embed/H5GZRhfuuZc?si=oPt6_B7_iUiUaEcN", 
+      "title": "EXCLUSIVE : SAMAJWADI PARTY | AKHILESH YADAV I | UTTAR PRADESH का अगला मुख्यमंत्री | Amitabh Bajpai ",
+      "author": "Spotlight With Nikhil",
+      "date": "2024-10-20",
+      "description": "Tune in with us and be part of the conversation that matters. Together, let's enlighten the path forward and empower a generation to make informed choices and drive positive change.",
+      "tags": ["Political Podcast"]
+  },
+  {
+      "id": 5,
+      "videoUrl": "https://img.youtube.com/vi/B7CABV7IH1Y/0.jpg",
+      "iframeUrl": "https://www.youtube.com/embed/NCTS05DDmv8?si=exKlziKcgU6yXz-k", 
+      "title": "Annu Awasthi | LOVE STORY | COMEDY | BHABHI JI GHAR PAR HAI | BOLLYWOOD | KANPUR ",
+      "author": "Spotlight With Nikhil",
+      "date": "2024-10-20",
+      "description": "Tune in with us and be part of the conversation that matters. Together, let's enlighten the path forward and empower a generation to make informed choices and drive positive change.",
+      "tags": ["Political Podcast"]
   }
+  
 ]

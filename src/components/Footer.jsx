@@ -1,5 +1,14 @@
 import React from "react";
-import { FaYoutube, FaInstagram, FaTwitter, FaFacebook, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Importing icons
+import {
+  FaYoutube,
+  FaInstagram,
+  FaTwitter,
+  FaFacebook,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa"; // Importing icons
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,16 +19,29 @@ const Footer = () => {
 
       {/* Main Content: Navigation & Contact */}
       <div className="flex flex-wrap justify-between items-start w-[90%] max-w-[1200px] mb-8">
-
         {/* Navigation Links */}
         <div className="w-full sm:w-[45%] mb-6 sm:mb-0" data-aos="fade-right">
-          <div className="flex flex-col gap-4 text-xl text-white font-semibold">
-            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">HOME</li>
-            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">ABOUT US</li>
-            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">PODCASTS</li>
-            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">BLOG</li>
-            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">OUR TEAM</li>
-            <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">CONTACT</li>
+          <div className="flex flex-col gap-4 text-xl text-white font-semibold ">
+            <ul>
+              <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300 p-2  ">
+                <Link to="/">HOME</Link>
+              </li>
+              <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300 p-2 ">
+                <Link to="/about">ABOUT US</Link>
+              </li>
+              <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300 p-2 ">
+                <Link to="/podcast">PODCASTS</Link>
+              </li>
+              {/* <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300">
+        <Link to="/blog">BLOG</Link>
+    </li> */}
+              <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300 p-2 ">
+                <Link to="/our-team">OUR TEAM</Link>
+              </li>
+              <li className="hover:text-yellow-300 cursor-pointer transition-colors duration-300 p-2 ">
+                <Link to="/contact">CONTACT</Link>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -34,14 +56,15 @@ const Footer = () => {
               <FaEnvelope className="text-lg" /> Info@spotlightwithnikhil.in
             </li>
             <li className="flex items-center gap-2 w-[90%] sm:w-[80%] text-end">
-              <FaMapMarkerAlt className="text-lg" /> 117/H, 1606, Near J.K. Temple, Model Town, Pandu Nagar, Kanpur, Uttar Pradesh 208005
+              <FaMapMarkerAlt className="text-lg" /> 117/H, 1606, Near J.K.
+              Temple, Model Town, Pandu Nagar, Kanpur, Uttar Pradesh 208005
             </li>
           </div>
 
           {/* Social Media Links in Row */}
           <div className="flex gap-8 mt-6 justify-start">
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/@SpotlightwithNikhil" target="_blank"
               className="text-white text-3xl hover:text-red-600 transition-colors duration-300"
             >
               <FaYoutube />

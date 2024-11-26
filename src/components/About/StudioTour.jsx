@@ -1,7 +1,7 @@
 import React from 'react';
 const StudioTour = () => {
   return (
-    <div className="flex items-start justify-between p-6 bg-gray-100" data-aos="fade-right">
+    <div className="flex md:flex md:flex-row items-start justify-between p-6 bg-gray-100" data-aos="fade-right">
       {/* Image Section */}
       <div className="w-full md:w-1/2 p-4">
         <img

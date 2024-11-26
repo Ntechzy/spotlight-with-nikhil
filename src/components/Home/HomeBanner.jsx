@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 // import AOS from "aos"; // Import AOS
 
 
@@ -44,7 +45,7 @@ const HomeBanner = ({ title, description, image, btn }) => {
           data-aos="fade-up" 
           data-aos-delay="400"
         >
-          {btn}
+         <Link to="/podcast">{btn}</Link>
         </button>
       </div>
     </div>

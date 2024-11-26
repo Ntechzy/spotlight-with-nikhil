@@ -36,8 +36,10 @@ export const StickyScroll = ({ content, contentClassName }) => {
   const backgroundColors = [
     "var(--slate-900)",
     "var(--black)",
-    "var(--neutral-900)",
     "var(--gray-900)",
+    "var(--neutral-900)",
+    "var(--stone-900)",
+    "var(--zinc-900)",
   ];
   
   const linearGradients = [
@@ -83,7 +85,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
                 className="text-kg text-slate-300 max-w-sm"
               >
-                 {item.name} is been a greate employee at sportlight with nikhil working with almost {item.experience} we have shared very joyfull time with him.
+                 {item.about}  
               </motion.p>
               <motion.p
                 initial={{ opacity: 0 }}

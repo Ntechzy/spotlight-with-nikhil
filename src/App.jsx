@@ -10,6 +10,8 @@ import About from './Pages/About'
 import PodcastPage from './Pages/PodcastPage'
 import ContactPage from './Pages/Contact'
 import Contact from './Pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
+import GalleryPage from './Pages/GalleryPage'
 // import Podcast from './Pages/PodcastPage'
 // import { Home } from './pages/Home'
 // import Footer from './components/Card/Footer'
@@ -19,6 +21,7 @@ const App = () => {
   return (
     <div >
     <Router>
+      <ScrollToTop/>
       <TopSection/>
       <Navbar/>
       <Routes>
@@ -26,6 +29,7 @@ const App = () => {
         <Route path="/about" exact element={<About/>} />
         <Route path="/home/*" exact element={<PodcastNav/>} />
         <Route path="/podcast/" exact element={<PodcastPage/>} />
+        <Route path="/gallery/" exact element={<GalleryPage/>} />
         
         <Route path="/our-team" exact element={<OurTeam/>} />
         <Route path="/contact" exact element={<Contact/>} />

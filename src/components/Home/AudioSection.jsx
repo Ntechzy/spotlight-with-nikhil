@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FaBackward, FaForward, FaPauseCircle, FaPlayCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const AudioSection = () => {
   const audioRef = useRef(null);
@@ -137,9 +138,9 @@ const AudioSection = () => {
             </div>
 
             {/* View More Episodes Link */}
-            <a href="/episodes" className="mt-2 text-white hover:underline text-lg" data-aos="fade-up" data-aos-delay="800">
+            <Link to="/podcast" className="mt-2 text-white hover:underline text-lg" data-aos="fade-up" data-aos-delay="800">
               More Episodes &rarr;
-            </a>
+            </Link>
           </div>
         </div>
       </div>

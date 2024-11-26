@@ -14,9 +14,11 @@ export const navbarData = [
       
     },
     {
-      "label": "BLOG",
-      "link": "/blog"
+      "label": "GALLERY",
+      "link": "/gallery",
+      
     },
+  
     {
       "label": "OUR TEAM",
       "link": "/our-team"

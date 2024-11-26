@@ -40,13 +40,13 @@ const TestimonialCarousel = () => {
         backgroundImage: "url('/assets/testimonialbg.png')",
       }}
     >
-      <div className="md:absolute top-8 left-8 max-w-lg bg-white p-8 shadow-md rounded-lg border-red-900 m-8 ">
+      <div className="md:absolute top-8 left-8 max-w-lg bg-white md:p-8 p-6 shadow-md rounded-lg border-red-900 m-8 ">
         <h3 className="text-blue-700 text-2xl font-semibold mb-2">TESTIMONIAL</h3>
-        <h2 className="text-2xl font-bold mb-4">Our guests say about us</h2>
+        <h2 className="md:text-2xl text-xl font-bold mb-4">Our guests say about us</h2>
 
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-8">
+            <div key={index} className="md:p-8 ">
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.photo}
