@@ -13,12 +13,12 @@
     return (
       <nav className={`flex md:items-center justify-between p-4 top-0 left-0 right-0 z-50 bg-white shadow-md`}>
         {/* Logo Section */}
-        <div className="w-48 h-24">
-          <img src="/assets/spotlightlogo.png" alt="Logo" className="h-full w-full" />
+        <div className="w-24 h-auto ">
+          <img src="/assets/logo.png" alt="Logo" className="h-full w-full" />
         </div>
 
         {/* Centered Navbar Links (visible on desktop and mobile when opened) */}
-        <div className={`md:text-center md:mt-[85px] md:mr-11 md:block ${isOpen ? 'block' : 'hidden'} md:flex absolute top-0 items-start justify-start flex right-0 left-0 m-auto md:w-[100%] md:text-center  bottom-0 text-white md:text-black w-[100%] md:bg-transparent bg-white z-50  h-56 mt-32 transition-all ease-in-out duration-300`}>
+        <div className={`md:text-center md:mt-[68px] md:mr-11 md:block ${isOpen ? 'block' : 'hidden'} md:flex absolute top-0 items-start justify-start flex right-0 left-0 m-auto md:w-[100%] md:text-center  bottom-0 text-white md:text-black w-[100%] md:bg-transparent bg-white z-50  h-52 mt-32 transition-all ease-in-out duration-300`}>
           <ul className="flex justify-center md:space-x-4 md:flex md:flex-row  flex-col translate-y-1 duration-200  md:ml-80 w-[100%] ml-8 gap-3 ">
             {navbarData.map((item, index) => (
               <li key={index} className="relative group ">

@@ -13,8 +13,8 @@ const Banner = ({CapitalPagename,pagename}) => {
       <div className="absolute inset-0 bg-blue-900 opacity-60"></div>
       
       {/* Content */}
-      <div className="relative z-10 p-8 bg-white bg-opacity-90 md:rounded-lg max-w-xl text-center" data-aos="fade-up">
-        <h1 className="text-4xl font-bold mb-2">{CapitalPagename}</h1>
+      <div className="relative z-10 p-8 bg-white bg-opacity-90 md:rounded-lg md:max-w-xl md:m-auto md:mt-32 w-20 mt-24 mx-16 text-center" data-aos="fade-up">
+        <h1 className="md:text-4xl text-2xl font-bold mb-2">{CapitalPagename}</h1>
         <div className="flex items-center justify-center text-gray-600 text-sm">
           <span className="mr-2">🏠</span>
         <Link to="/">  <span className="text-blue-600">Home</span> </Link>
