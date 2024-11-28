@@ -52,11 +52,11 @@ const AudioSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md">
-      <h2 className="md:text-2xl text-xl font-bold mb-4 text-center text-white">Spotlight with Nikhil Sachan</h2>
+    <div className="flex flex-col items-center p-11 bg-[#194E82] shadow-md" data-aos="fade-up">
+      <h2 className="md:text-2xl text-xl font-bold mb-4 text-center text-white" data-aos="fade-up" data-aos-delay="100">Spotlight with Nikhil Sachan</h2>
       
       {/* Main content flex container */}
-      <div className="md:flex md:flex-row flex flex-col w-full items-center">
+      <div className="md:flex md:flex-row flex flex-col w-full items-center" data-aos="fade-up" data-aos-delay="300">
         
         {/* Image Section */}
         <img 
@@ -82,7 +82,7 @@ const AudioSection = () => {
             </div>
           </div>
 
-         <div className='md:flex md:flex-row flex flex-col md:items-center md:gap-32 w-full items-center'>
+         <div className='md:flex md:flex-row flex flex-col md:items-center md:gap-32 w-full items-center'  data-aos="fade-down">
            {/* Song Title and Author */}
            <div className="text-center mb-4">
             <h3 className=" font-semibold text-xl text-white">Spotlights Here</h3>
