@@ -19,12 +19,12 @@ const AudioSection = () => {
 
   // Function to handle backward seek
   const seekBackward = () => {
-    audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 10);
+    audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5);
   };
 
   // Function to handle forward seek
   const seekForward = () => {
-    audioRef.current.currentTime = Math.min(duration, audioRef.current.currentTime + 10);
+    audioRef.current.currentTime = Math.min(duration, audioRef.current.currentTime + 5);
   };
 
   // Update current time and duration
@@ -36,7 +36,9 @@ const AudioSection = () => {
 
     audioRef.current.addEventListener('timeupdate', updateCurrentTime);
     return () => {
+      if (audioRef.current) {
       audioRef.current.removeEventListener('timeupdate', updateCurrentTime);
+      }
     };
   }, [audioRef]);
 
